@@ -1,0 +1,251 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FF4553;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+}
+
+header .logo img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF4553;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobile-menu {
+    display: none; 
+}
+
+.hero {
+    background-image: url('/img/masterhead.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.cta-btn {
+    background-color: #FF4553;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.servicios-section {
+    background-image: url('img/Landing-Rocket.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.servicios-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF4553;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: white;
+}
+
+.servicio p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+#equipo {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#equipo .equipo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#equipo .miembro {
+    text-align: center;
+}
+
+#equipo .miembro img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#equipo .miembro p {
+    margin-top: 10px;
+    color: black
+}
+
+#contacto {
+    padding: 50px 20px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+#contacto form input, #contacto form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#contacto form button {
+    background-color: #FF4553;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+footer .footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .servicios-section h2 {
+        font-size: 28px;
+    }
+
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    .mobile-menu {
+        display: block; 
+    }
+
+    #equipo .equipo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #equipo .miembro {
+        width: 80%;
+    }
+
+    footer .social-media a {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .mobile-menu img {
+        width: 30px;
+    }
+}
